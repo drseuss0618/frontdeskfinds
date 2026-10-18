@@ -32,3 +32,4 @@ footer.site{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;color:var(-
 footer.site a{color:var(--muted)}
 .disclosure{font-size:.9rem;color:var(--muted)}
 @media (min-width:640px){.cards.two{grid-template-columns:1fr 1fr}}
+a.aff::after{content:" (affiliate link)";font-size:.85em;color:var(--muted)}
