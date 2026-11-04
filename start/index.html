@@ -23,12 +23,14 @@
 <main><div class="wrap">
 <h1>Start your free 30 days</h1>
 <p class="lede">Tell us a little about your business and we will set up your front desk, look after it ourselves, and email you when it is ready. Free for 30 days, then plans start at $99 a month, month to month, cancel any time.</p>
-<p class="meta">We ask for your phone numbers by email after you send this, so we do not collect them here. Please do not enter card numbers, passwords or Social Security numbers.</p>
+<p class="meta">Please do not enter card numbers, passwords or Social Security numbers.</p>
 
 <form id="req" class="form" novalidate>
 <div class="fld"><label for="f_biz">Business name</label><input id="f_biz" autocomplete="organization" required><span class="err" data-for="f_biz"></span></div>
 <div class="fld"><label for="f_name">Your name, as callers should hear it</label><input id="f_name" autocomplete="name" required><span class="err" data-for="f_name"></span></div>
 <div class="fld"><label for="f_mail">Your email, for call summaries</label><input id="f_mail" type="email" autocomplete="email" required><span class="err" data-for="f_mail"></span></div>
+<div class="fld"><label for="f_urgent">Number to ring for urgent calls, and if anything goes wrong</label><input id="f_urgent" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your own cell, 10 digits" required><span class="err" data-for="f_urgent"></span></div>
+<div class="fld"><label for="f_line">Number your customers call</label><input id="f_line" type="tel" inputmode="tel" placeholder="The business line you will forward from, 10 digits" required><span class="err" data-for="f_line"></span></div>
 <div class="fld"><label for="f_type">Type of business</label><select id="f_type" required><option value="">Choose one</option><option>Plumbing</option><option>HVAC</option><option>Roofing</option><option>Electrical</option><option>Auto repair</option><option>Cleaning</option><option>Landscaping</option><option>Salon or barber</option><option>Restaurant</option><option>Other</option></select><span class="err" data-for="f_type"></span></div>
 <div class="fld"><label for="f_hours">Your hours</label><input id="f_hours" placeholder="Example: Mon to Fri, 8 to 5" required><span class="err" data-for="f_hours"></span></div>
 <div class="fld"><label for="f_area">Towns or areas you serve <span class="opt">(optional)</span></label><input id="f_area"></div>
@@ -59,12 +61,13 @@ f.addEventListener('submit',function(ev){
 ev.preventDefault();
 var ok=true,first=null;
 [['f_biz','Please enter your business name.'],['f_name','Please enter your name.'],['f_type','Please choose a type.'],['f_hours','Please enter your hours.']].forEach(function(r){if(!v(r[0])){err(r[0],r[1]);ok=false;first=first||r[0]}else err(r[0],'')});
+[['f_urgent','Please enter a 10-digit phone number.'],['f_line','Please enter a 10-digit phone number.']].forEach(function(r){var dg=v(r[0]).replace(/\D/g,'');if(dg.length===11&&dg.charAt(0)==='1')dg=dg.slice(1);if(dg.length!==10){err(r[0],r[1]);ok=false;first=first||r[0]}else err(r[0],'')});
 var mail=v('f_mail');
 if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)){err('f_mail','Please enter a valid email.');ok=false;first=first||'f_mail'}else err('f_mail','');
 [['f_c1','Please tick this box to continue.'],['f_c2','Please tick this box to continue.']].forEach(function(r){if(!document.getElementById(r[0]).checked){err(r[0],r[1]);ok=false;first=first||r[0]}else err(r[0],'')});
 if(!ok){document.getElementById(first).focus();return}
 if(v('f_hp')){return}
-var L=[['Business name','f_biz'],['Name for callers','f_name'],['Email','f_mail'],['Type of business','f_type'],['Hours','f_hours'],['Areas served','f_area'],['Languages','f_lang'],['May say','f_say'],['Must never say','f_never'],['Plan interest','f_plan']];
+var L=[['Business name','f_biz'],['Name for callers','f_name'],['Email','f_mail'],['Number to ring for urgent calls','f_urgent'],['Business line (customers call)','f_line'],['Type of business','f_type'],['Hours','f_hours'],['Areas served','f_area'],['Languages','f_lang'],['May say','f_say'],['Must never say','f_never'],['Plan interest','f_plan']];
 var subject='Front Desk Finds start form - '+v('f_biz');
 var t='Subject: '+subject+'\n\n';
 var payload={access_key:KEY,subject:subject,from_name:'Front Desk Finds website',replyto:mail,name:v('f_name'),botcheck:''};
@@ -85,7 +88,7 @@ fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':
 if(!x.ok){fail();return}
 sb.disabled=false;sm.textContent='';
 document.getElementById('done_h').textContent='Got it, thank you';
-document.getElementById('done_p').textContent="We will email you within one business day with next steps. We will ask for your phone numbers then.";
+document.getElementById('done_p').textContent="We will email you within one business day with next steps.";
 out.style.display='none';f.reset();f.style.display='none';d.style.display='block';d.focus();
 }).catch(fail);
 });
