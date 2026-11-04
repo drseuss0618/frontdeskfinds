@@ -44,3 +44,12 @@ footer.site a,footer.site .disclosure{color:#d7e6e4}
 
 img.hero,img.band{display:block;width:100%;height:auto;margin:1.6rem 0;border-radius:18px}
 .brand .gold{color:var(--gold)}
+
+.email{background:#fff;color:#17302e;border-radius:12px;overflow:hidden;margin:1.2rem 0;border:3px solid var(--gold)}
+.email-head{background:#e8f7f5;padding:.7rem 1rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.email-head em{font-style:normal;background:var(--gold);color:#17302e;border-radius:4px;padding:0 .5rem;font-size:.85rem;align-self:center}
+.email dl{margin:0;padding:.6rem 1rem 1rem;display:grid;grid-template-columns:9rem 1fr;gap:.45rem 1rem}
+.email dt{font-weight:700;color:#1f5f5b}.email dd{margin:0}
+@media (max-width:560px){.email dl{grid-template-columns:1fr;gap:0}.email dd{margin-bottom:.5rem}}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;margin:.5rem 0}
+.faq summary{cursor:pointer;font-weight:700;color:#fff}.faq details[open] summary{color:var(--gold)}.faq p{margin:.6rem 0 .2rem}

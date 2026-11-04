@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" role="img" aria-label="Four steps: email us, we set it up, forward your calls, you decide after 30 days">
 <rect width="960" height="220" rx="18" fill="#174a47"/>
 <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
-<g fill="#f2b84b"><circle cx="120" cy="80" r="34"/><circle cx="360" cy="80" r="34"/><circle cx="600" cy="80" r="34"/><circle cx="840" cy="80" r="34"/></g>
-<g font-size="34" font-weight="800" fill="#17302e"><text x="120" y="92">1</text><text x="360" y="92">2</text><text x="600" y="92">3</text><text x="840" y="92">4</text></g>
+<g fill="#f2b84b"><circle cx="120" cy="80" r="34"/><circle cx="360" cy="80" r="34"/><circle cx="600" cy="80" r="34"/><circle cx="828" cy="80" r="34"/></g>
+<g font-size="34" font-weight="800" fill="#17302e"><text x="120" y="92">1</text><text x="360" y="92">2</text><text x="600" y="92">3</text><text x="828" y="92">4</text></g>
 <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".6"><path d="M170 80h140"/><path d="M410 80h140"/><path d="M650 80h140"/></g>
-<g font-size="22" font-weight="700" fill="#fff"><text x="120" y="156">Email us</text><text x="360" y="156">We set it up</text><text x="600" y="156">Forward calls</text><text x="840" y="156">Decide at 30 days</text></g>
-<g font-size="17" fill="#d7e6e4"><text x="120" y="184">the basics</text><text x="360" y="184">nothing to install</text><text x="600" y="184">turn off any time</text><text x="840" y="184">no cost if not worth it</text></g></g>
+<g font-size="24" font-weight="700" fill="#fff"><text x="120" y="156">Email us</text><text x="360" y="156">We set it up</text><text x="600" y="156">Forward calls</text><text x="828" y="156">Decide at 30 days</text></g>
+<g font-size="21" fill="#d7e6e4"><text x="120" y="184">the basics</text><text x="360" y="184">nothing to install</text><text x="600" y="184">turn off any time</text><text x="828" y="184">no cost if not worth it</text></g></g>
 </svg>
