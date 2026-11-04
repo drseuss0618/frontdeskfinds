@@ -61,3 +61,15 @@ main h1{font-size:clamp(2rem,5.5vw,3rem);letter-spacing:-.01em}
 a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .card{transition:transform .15s}.card:hover{transform:translateY(-2px)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.form{margin-top:1.4rem;max-width:36rem}
+.fld{margin:0 0 1.1rem}
+.fld label,.chk label{display:block;font-weight:600;margin-bottom:.3rem}
+.fld input,.fld select,.fld textarea{width:100%;font:inherit;padding:.65rem .75rem;border-radius:8px;border:2px solid #fff;background:#fff;color:#17302e}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:3px solid var(--gold);outline-offset:1px}
+.opt,.hint{font-weight:400;color:var(--muted);font-size:.9rem}
+.err{display:block;color:#ffd7a0;font-weight:600;min-height:0}
+.chk{margin:0 0 1rem}.chk label{font-weight:400;display:flex;gap:.6rem;align-items:flex-start}.chk input{margin-top:.35rem;width:1.1rem;height:1.1rem;flex:none}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.fine{font-size:.9rem;color:var(--muted)}
+.out{white-space:pre-wrap;background:#fff;color:#17302e;padding:1rem;border-radius:8px;overflow-x:auto}

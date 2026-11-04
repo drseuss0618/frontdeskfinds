@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start your free 30 days | Front Desk Finds</title>
+<meta name="description" content="Tell us about your business and we will set up your AI front desk. Free for 30 days, then month to month.">
+<link rel="canonical" href="https://frontdeskfinds.com/start/">
+<link rel="icon" href="/icon-48.png" type="image/png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Start your free 30 days | Front Desk Finds">
+<meta property="og:description" content="Tell us about your business and we will set up your AI front desk. Free for 30 days.">
+<meta property="og:image" content="https://frontdeskfinds.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frontdeskfinds.com/start/">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/"><img src="/icon-48.png" alt="" width="28" height="28">Front <span class="gold">Desk</span> Finds</a>
+<nav aria-label="Main"><a href="/">Home</a><a href="/our-service/">Front desk</a><a href="/how-much-does-an-answering-service-cost/">Cost guide</a><a href="/how-we-review/">How we review</a><a href="/about/">About</a></nav>
+</div></header>
+<main><div class="wrap">
+<h1>Start your free 30 days</h1>
+<p class="lede">Tell us a little about your business and we will set up your front desk, look after it ourselves, and email you when it is ready. Free for 30 days, then plans start at $99 a month, month to month, cancel any time.</p>
+<p class="meta">We ask for your phone numbers by email after you send this, so we do not collect them here. Please do not enter card numbers, passwords or Social Security numbers.</p>
+
+<form id="req" class="form" novalidate>
+<div class="fld"><label for="f_biz">Business name</label><input id="f_biz" autocomplete="organization" required><span class="err" data-for="f_biz"></span></div>
+<div class="fld"><label for="f_name">Your name, as callers should hear it</label><input id="f_name" autocomplete="name" required><span class="err" data-for="f_name"></span></div>
+<div class="fld"><label for="f_mail">Your email, for call summaries</label><input id="f_mail" type="email" autocomplete="email" required><span class="err" data-for="f_mail"></span></div>
+<div class="fld"><label for="f_type">Type of business</label><select id="f_type" required><option value="">Choose one</option><option>Plumbing</option><option>HVAC</option><option>Roofing</option><option>Electrical</option><option>Auto repair</option><option>Cleaning</option><option>Landscaping</option><option>Salon or barber</option><option>Restaurant</option><option>Other</option></select><span class="err" data-for="f_type"></span></div>
+<div class="fld"><label for="f_hours">Your hours</label><input id="f_hours" placeholder="Example: Mon to Fri, 8 to 5" required><span class="err" data-for="f_hours"></span></div>
+<div class="fld"><label for="f_area">Towns or areas you serve <span class="opt">(optional)</span></label><input id="f_area"></div>
+<div class="fld"><label for="f_lang">Languages callers use</label><select id="f_lang"><option>English</option><option>Spanish</option><option>Both English and Spanish</option></select></div>
+<div class="fld"><label for="f_say">Things the assistant may say about your business <span class="opt">(optional)</span></label><textarea id="f_say" rows="3" placeholder="Hours, areas, what you do. True facts only."></textarea></div>
+<div class="fld"><label for="f_never">Things it must never say or promise <span class="opt">(optional)</span></label><textarea id="f_never" rows="3" placeholder="It never quotes prices or promises arrival times. Add anything else."></textarea></div>
+<div class="fld"><label for="f_plan">Plan you are leaning toward</label><select id="f_plan"><option>Not sure yet</option><option>Starter, $99 a month</option><option>Standard, $199 a month</option><option>Pro, $349 a month</option></select><span class="hint">You start with the free 30 days either way.</span></div>
+<div class="chk"><label><input type="checkbox" id="f_c1"> I understand callers are told they are speaking with an automated assistant, and I will check my state's rules on call recording and notices before going live.</label><span class="err" data-for="f_c1"></span></div>
+<div class="chk"><label><input type="checkbox" id="f_c2"> I understand the first 30 days are free, then plans start at $99 a month, month to month, and I can cancel any time.</label><span class="err" data-for="f_c2"></span></div>
+<div class="hp" aria-hidden="true"><label>Leave this empty <input id="f_hp" tabindex="-1" autocomplete="off"></label></div>
+<p><button class="btn" id="send" type="submit">Send my details</button> <span id="sendmsg" class="meta" role="status"></span></p>
+<p class="fine">We use what you send only to set up your front desk and reply to you. We do not sell it. The form is delivered by a form service (Web3Forms) to our email. To have your details deleted, reply "remove" to any of our emails. Questions? Email <a href="mailto:support@frontdeskfinds.com">support@frontdeskfinds.com</a>.</p>
+</form>
+
+<div id="done" class="note" tabindex="-1" style="display:none">
+<h2 id="done_h" style="margin-top:0">Thank you</h2>
+<p id="done_p"></p>
+<pre id="out" class="out" style="display:none"></pre>
+</div>
+</div></main>
+<script>
+(function(){
+var f=document.getElementById('req'),d=document.getElementById('done'),sb=document.getElementById('send'),sm=document.getElementById('sendmsg'),out=document.getElementById('out'),
+KEY="72717da1-03e5-4185-af34-bfd3014b3a2e",ADDR='support@frontdeskfinds.com';
+function v(id){return (document.getElementById(id).value||'').trim()}
+function err(id,t){var e=f.querySelector('[data-for="'+id+'"]');if(e)e.textContent=t||''}
+f.addEventListener('submit',function(ev){
+ev.preventDefault();
+var ok=true,first=null;
+[['f_biz','Please enter your business name.'],['f_name','Please enter your name.'],['f_type','Please choose a type.'],['f_hours','Please enter your hours.']].forEach(function(r){if(!v(r[0])){err(r[0],r[1]);ok=false;first=first||r[0]}else err(r[0],'')});
+var mail=v('f_mail');
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)){err('f_mail','Please enter a valid email.');ok=false;first=first||'f_mail'}else err('f_mail','');
+[['f_c1','Please tick this box to continue.'],['f_c2','Please tick this box to continue.']].forEach(function(r){if(!document.getElementById(r[0]).checked){err(r[0],r[1]);ok=false;first=first||r[0]}else err(r[0],'')});
+if(!ok){document.getElementById(first).focus();return}
+if(v('f_hp')){return}
+var L=[['Business name','f_biz'],['Name for callers','f_name'],['Email','f_mail'],['Type of business','f_type'],['Hours','f_hours'],['Areas served','f_area'],['Languages','f_lang'],['May say','f_say'],['Must never say','f_never'],['Plan interest','f_plan']];
+var subject='Front Desk Finds start form - '+v('f_biz');
+var t='Subject: '+subject+'\n\n';
+var payload={access_key:KEY,subject:subject,from_name:'Front Desk Finds website',replyto:mail,name:v('f_name'),botcheck:''};
+L.forEach(function(r){var x=v(r[1]);t+=r[0]+': '+(x||'(not given)')+'\n';payload[r[0]]=x||'(not given)'});
+t+='Understands automated assistant notice and recording rules: yes\nUnderstands free 30 days then month to month: yes\n';
+payload['Acknowledgements']='Automated assistant notice and recording rules: yes. Free 30 days then month to month: yes.';
+sb.disabled=true;sm.textContent='Sending...';
+function fail(){
+sb.disabled=false;sm.textContent='';
+document.getElementById('done_h').textContent='The form could not send. Please email us instead';
+document.getElementById('done_p').innerHTML='Copy the text below and email it to <a href="mailto:'+ADDR+'">'+ADDR+'</a>. We reply with next steps, usually within one business day.';
+out.textContent=t.trim();out.style.display='block';
+f.style.display='none';d.style.display='block';d.focus();
+}
+fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)})
+.then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success}})})
+.then(function(x){
+if(!x.ok){fail();return}
+sb.disabled=false;sm.textContent='';
+document.getElementById('done_h').textContent='Got it, thank you';
+document.getElementById('done_p').textContent="We will email you within one business day with next steps. We will ask for your phone numbers then.";
+out.style.display='none';f.reset();f.style.display='none';d.style.display='block';d.focus();
+}).catch(fail);
+});
+})();
+</script>
+<footer class="site"><div class="wrap">
+<p class="disclosure">Front Desk Finds compares answering services and AI phone tools. We also run our own AI front desk service, so we are not a neutral party, and we may earn a commission from some links, which we mark as affiliate links. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>. No vendor pays to be listed. Prices are taken from vendors' public pages and can change.</p>
+<p><a href="/about/">About</a> &middot; <a href="/how-we-review/">How we review</a> &middot; <a href="/our-service/">Our service</a> &middot; <a href="/affiliate-disclosure/">Affiliate disclosure</a> &middot; <a href="/privacy/">Privacy</a></p>
+<p>&copy; 2026 Front Desk Finds &middot; Website by <a href="https://crafteddigitalartco.com">Crafted Digital Art Co</a></p>
+</div></footer>
+</body>
+</html>
