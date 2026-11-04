@@ -4,7 +4,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 a{color:var(--accent)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1rem}
+.wrap{max-width:54rem;margin:0 auto;padding:0 1rem}
 header.site{background:var(--teal-dark);border-bottom:4px solid var(--gold)}
 header.site .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
 .brand{font-weight:700;font-size:1.1rem;color:#fff;display:inline-flex;align-items:center;gap:.55rem;text-decoration:none;letter-spacing:.01em}
@@ -53,3 +53,11 @@ img.hero,img.band{display:block;width:100%;height:auto;margin:1.6rem 0;border-ra
 @media (max-width:560px){.email dl{grid-template-columns:1fr;gap:0}.email dd{margin-bottom:.5rem}}
 .faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;margin:.5rem 0}
 .faq summary{cursor:pointer;font-weight:700;color:#fff}.faq details[open] summary{color:var(--gold)}.faq p{margin:.6rem 0 .2rem}
+
+main h1{font-size:clamp(2rem,5.5vw,3rem);letter-spacing:-.01em}
+.lede{font-size:1.25rem}
+.btn{font-size:1.05rem;padding:.75rem 1.3rem;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.card{transition:transform .15s}.card:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
