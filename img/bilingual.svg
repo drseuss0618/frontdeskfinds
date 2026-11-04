@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" role="img" aria-label="Speech bubbles in English and Spanish">
-<rect width="960" height="240" rx="18" fill="#174a47"/>
+<rect width="960" height="240" rx="18" fill="#f1f7f6" stroke="#cfe0de" stroke-width="2"/>
 <g font-family="Segoe UI,Arial,sans-serif" font-weight="600">
-<path d="M70 40h400a22 22 0 0122 22v70a22 22 0 01-22 22H190l-50 38v-38H70a22 22 0 01-22-22V62a22 22 0 0122-22z" fill="#fff"/>
-<text x="80" y="92" font-size="26" fill="#17302e">Hi, thanks for calling.</text><text x="80" y="128" font-size="26" fill="#17302e">How can we help?</text>
+<path d="M70 40h400a22 22 0 0122 22v70a22 22 0 01-22 22H190l-50 38v-38H70a22 22 0 01-22-22V62a22 22 0 0122-22z" fill="#1f5f5b"/>
+<text x="80" y="92" font-size="26" fill="#ffffff">Hi, thanks for calling.</text><text x="80" y="128" font-size="26" fill="#ffffff">How can we help?</text>
 <path d="M490 78h400a22 22 0 0122 22v70a22 22 0 01-22 22h-70v38l-50-38H490a22 22 0 01-22-22v-70a22 22 0 0122-22z" fill="#f2b84b"/>
 <text x="500" y="130" font-size="26" fill="#17302e">Hola, gracias por llamar.</text><text x="500" y="166" font-size="26" fill="#17302e">¿En qué le podemos ayudar?</text></g>
 </svg>

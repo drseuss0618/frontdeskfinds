@@ -1,5 +1,4 @@
-:root{--teal:#1f5f5b;--teal-dark:#174a47;--gold:#f2b84b;--bg:#1f5f5b;--ink:#ffffff;--muted:#d7e6e4;--line:#3b7a76;--accent:#f2b84b;--accent-ink:#17302e;--card:#1a524f;--note:#174a47}
-@media (prefers-color-scheme:dark){:root{--bg:#1f5f5b;--ink:#ffffff;--muted:#d7e6e4}}
+:root{--teal:#1f5f5b;--teal-dark:#174a47;--gold:#f2b84b;--bg:#ffffff;--ink:#17302e;--muted:#4b6260;--line:#d5e1e0;--accent:#1f5f5b;--accent-ink:#17302e;--card:#f5f9f8;--note:#fff8e6}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
@@ -35,41 +34,42 @@ footer.site a{color:var(--muted)}
 @media (min-width:640px){.cards.two{grid-template-columns:1fr 1fr}}
 a.aff::after{content:" (affiliate link)";font-size:.85em;color:var(--muted)}
 
-h1,h2,h3{color:#fff}
+h1,h2,h3{color:var(--teal-dark)}
 .card{border-top:3px solid var(--gold)}
+.btn{color:#17302e}.btn:visited{color:#17302e}
 .note{border-left-color:var(--gold)}
-th{color:#fff}
+th{color:var(--teal-dark);background:#eef5f4}
 footer.site{background:var(--teal-dark);color:#d7e6e4;border-top:4px solid var(--gold)}
 footer.site a,footer.site .disclosure{color:#d7e6e4}
 
 img.hero,img.band{display:block;width:100%;height:auto;margin:1.6rem 0;border-radius:18px}
 .brand .gold{color:var(--gold)}
 
-.email{background:#fff;color:#17302e;border-radius:12px;overflow:hidden;margin:1.2rem 0;border:3px solid var(--gold)}
+.email{background:#fff;color:#17302e;border-radius:12px;overflow:hidden;margin:1.2rem 0;border:2px solid var(--line);box-shadow:0 2px 10px rgba(23,48,46,.08)}
 .email-head{background:#e8f7f5;padding:.7rem 1rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .email-head em{font-style:normal;background:var(--gold);color:#17302e;border-radius:4px;padding:0 .5rem;font-size:.85rem;align-self:center}
 .email dl{margin:0;padding:.6rem 1rem 1rem;display:grid;grid-template-columns:9rem 1fr;gap:.45rem 1rem}
 .email dt{font-weight:700;color:#1f5f5b}.email dd{margin:0}
 @media (max-width:560px){.email dl{grid-template-columns:1fr;gap:0}.email dd{margin-bottom:.5rem}}
 .faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;margin:.5rem 0}
-.faq summary{cursor:pointer;font-weight:700;color:#fff}.faq details[open] summary{color:var(--gold)}.faq p{margin:.6rem 0 .2rem}
+.faq summary{cursor:pointer;font-weight:700;color:var(--teal-dark)}.faq details[open] summary{color:var(--teal)}.faq p{margin:.6rem 0 .2rem}
 
 main h1{font-size:clamp(2rem,5.5vw,3rem);letter-spacing:-.01em}
 .lede{font-size:1.25rem}
 .btn{font-size:1.05rem;padding:.75rem 1.3rem;transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
-a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 .card{transition:transform .15s}.card:hover{transform:translateY(-2px)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
 .form{margin-top:1.4rem;max-width:36rem}
 .fld{margin:0 0 1.1rem}
 .fld label,.chk label{display:block;font-weight:600;margin-bottom:.3rem}
-.fld input,.fld select,.fld textarea{width:100%;font:inherit;padding:.65rem .75rem;border-radius:8px;border:2px solid #fff;background:#fff;color:#17302e}
+.fld input,.fld select,.fld textarea{width:100%;font:inherit;padding:.65rem .75rem;border-radius:8px;border:2px solid #9db5b3;background:#fff;color:#17302e}
 .fld input:focus,.fld select:focus,.fld textarea:focus{outline:3px solid var(--gold);outline-offset:1px}
 .opt,.hint{font-weight:400;color:var(--muted);font-size:.9rem}
-.err{display:block;color:#ffd7a0;font-weight:600;min-height:0}
+.err{display:block;color:#a3400f;font-weight:600;min-height:0}
 .chk{margin:0 0 1rem}.chk label{font-weight:400;display:flex;gap:.6rem;align-items:flex-start}.chk input{margin-top:.35rem;width:1.1rem;height:1.1rem;flex:none}
 .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
 .fine{font-size:.9rem;color:var(--muted)}
-.out{white-space:pre-wrap;background:#fff;color:#17302e;padding:1rem;border-radius:8px;overflow-x:auto}
+.out{white-space:pre-wrap;border:1px solid var(--line);background:#fff;color:#17302e;padding:1rem;border-radius:8px;overflow-x:auto}
