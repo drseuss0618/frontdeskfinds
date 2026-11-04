@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="A customer call is answered by the AI front desk and the details arrive in your email">
+<rect width="960" height="300" rx="18" fill="#174a47"/>
+<g fill="none" stroke="#f2b84b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="70" y="60" width="110" height="180" rx="18" stroke="#fff"/><path d="M110 215h30" stroke="#fff"/>
+<path d="M118 118c0-8 6-14 14-14l8 18-8 8c6 12 14 20 26 26l8-8 18 8c0 8-6 14-14 14-30 0-52-22-52-52z" fill="#f2b84b" stroke="none"/>
+<path d="M205 150h115M300 130l22 20-22 20"/>
+</g>
+<g transform="translate(360 70)"><circle cx="90" cy="80" r="80" fill="#1f5f5b" stroke="#f2b84b" stroke-width="5"/>
+<path d="M45 85a45 45 0 0190 0" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+<rect x="34" y="82" width="16" height="32" rx="7" fill="#fff"/><rect x="130" y="82" width="16" height="32" rx="7" fill="#fff"/>
+<path d="M138 110q0 22-34 24" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="100" cy="134" r="7" fill="#f2b84b"/>
+<path d="M150 20l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#f2b84b"/></g>
+<g transform="translate(700 75)"><rect width="190" height="150" rx="14" fill="#fff"/><path d="M12 22l83 66 83-66" fill="none" stroke="#1f5f5b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="30" y="100" width="90" height="9" rx="4" fill="#9cc3bf"/><rect x="30" y="118" width="60" height="9" rx="4" fill="#9cc3bf"/></g>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">
+<text x="125" y="275">Customer calls</text><text x="450" y="275">Front desk answers</text><text x="795" y="275">Details in your email</text></g>
+<path d="M545 150h130M655 130l22 20-22 20" fill="none" stroke="#f2b84b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

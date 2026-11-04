@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-label="Emergency calls are put through to your phone; gas or fire calls are told to call 911"><rect width="960" height="260" rx="18" fill="#174a47"/>
+<g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+<rect x="40" y="50" width="400" height="150" rx="16" fill="#1f5f5b" stroke="#f2b84b" stroke-width="4"/>
+<text x="240" y="100" font-size="26" font-weight="800" fill="#f2b84b">Urgent call</text>
+<text x="240" y="138" font-size="21" fill="#fff">No water, flooding, a real emergency</text>
+<text x="240" y="170" font-size="21" font-weight="700" fill="#fff">Put through to your phone</text>
+<rect x="520" y="50" width="400" height="150" rx="16" fill="#1f5f5b" stroke="#fff" stroke-width="4"/>
+<text x="720" y="100" font-size="26" font-weight="800" fill="#fff">Gas or fire</text>
+<text x="720" y="138" font-size="21" fill="#d7e6e4">Danger to life or property</text>
+<text x="720" y="170" font-size="21" font-weight="700" fill="#fff">Caller is told to call 911</text>
+<path d="M455 125h50M493 108l18 17-18 17" fill="none" stroke="#f2b84b" stroke-width="0"/></g></svg>

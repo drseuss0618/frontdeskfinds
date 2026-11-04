@@ -41,3 +41,5 @@ h1,h2,h3{color:#fff}
 th{color:#fff}
 footer.site{background:var(--teal-dark);color:#d7e6e4;border-top:4px solid var(--gold)}
 footer.site a,footer.site .disclosure{color:#d7e6e4}
+
+img.hero,img.band{display:block;width:100%;height:auto;margin:1.6rem 0;border-radius:18px}
